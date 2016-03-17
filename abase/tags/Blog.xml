@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[GrowBr]]></title>
+    <link href="/abase/tags/Blog.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2016-03-17T12:24:46-03:00</updated>
+    <id>/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Sejam bem vindos ao GrowBr]]></title>
+            <link href="/blog/2016/03/16/sejam-bem-vindos"/>
+            <updated>2016-03-16T00:00:00-03:00</updated>
+            <id>/blog/2016/03/16/sejam-bem-vindos</id>
+            <content type="html"><![CDATA[<p>Olá amigos sejam bem vindos ao projeto GrowBr , eu sou o <a href="http://growbr.org/sobre/GreenMind/">GreenMind</a> e gostaria de agradecer e esclarecer algumas coisas sobre o projeto.O GrowBr é um projeto que tem como meta compartilhar conhecimento em diversas áreas mais com foco principal em Segurança da Informação. O que vou compartilhar com o tempo.</p>
+
+<ul>
+<li>Laboratórios para estudo</li>
+<li>Livros</li>
+<li>Cursos</li>
+<li>Primeiros passos com Linux</li>
+<li>Construa sua própria infra</li>
+</ul>
+
+<p>Diariamente um novo tutorial será feito e compartilhado , esperamos que possa ajudar muitas pessoas.</p>
+
+<blockquote>
+  <p>Diariamente navegando pela internet me deparo com dezenas quem sabe até milhares de cursos de segurança cobrando preços absurdos com um conteúdo que na minha opinião não merece 1/3 do valor pago , porque não nós juntar e criar uma base de dados aberta para QUALQUER pessoas participar ? E Free ? GrowBr neles!</p>
+</blockquote>
+
+<p>Qualquer pessoa pode participar do projeto , todo o conteúdo compartilhado é revisado por pessoas que querem ajudar e compartilhar algo de qualidade. Faça parte você também !</p>
+
+<h2 id="desenvolvimento">Desenvolvimento</h2>
+
+<p>Escolha a linguagem e comece a desenvolver , scripts para auxiliar e maquinas virtuais para desenvolver e fazer downloads.</p>
+
+<ul>
+<li><a href="http://growbr.org/abase/desenvolvimento/assembly/">Assembly</a> - Assembly</li>
+<li><a href="http://growbr.org/abase/desenvolvimento/shell-script/">Bash Script</a> - Bash Script</li>
+<li><a href="http://growbr.org/abase/desenvolvimento/c/">C</a> - C</li>
+<li><a href="http://growbr.org/abase/desenvolvimento/php/">PHP</a> - PHP</li>
+<li><a href="http://growbr.org/abase/desenvolvimento/python/">Python</a> - Python</li>
+</ul>
+
+<h2 id="doa%C3%A7%C3%B5es">Doações</h2>
+
+<p>Você nunca vai pagar nada para aprender e fazer parte do GrowBr , mais você pode ajudar a manter o projeto através de <a href="http://growbr.org/ajude/">doações</a>.</p>
+
+<ul>
+<li>10 R$ Reais</li>
+<li>20 R$ Reais</li>
+<li>50 R$ Reais</li>
+<li>100 R$ Reais</li>
+</ul>
+
+<p>Ajude o projeto e ainda receba presentes.</p>
+
+<p><strong>Faça parte você também!</strong></p>
+]]></content>
+        </entry>
+    </feed>

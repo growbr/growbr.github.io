@@ -1,0 +1,484 @@
+<!--
+  GrowBr é um projeto que tem como foco compartilhar conhecimento e arquivos sem cobrar nada.
+  Agradecimentos ao GreenMind que é responsavel pelo desenvolvimento e pela configuração da infra
+  Agradecimentos ao shapebootstrap que compartilhou o template Corlate
+  Agradecimentos a comunidade que ajuda e sempre vai ajudar o projeto
+  Duvidas ? greenmind[at]growbr.org
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento.">
+    <meta name="author" content="GreenMind">
+    <title>GrowBr | ABase</title>
+    <link href="/LibThemes/ThemeGrowBr/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/animate.min.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/growbr.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/responsive.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/google-resposive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/LibThemes/ThemeGrowBr/assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-57-precomposed.png">
+    <!-- Facebook Shared-->
+    <meta property="og:url" content="http://growbr.org/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Site em Construção" />
+    <meta property="og:description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento." />
+    <meta property="og:image" content="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" />
+    <!-- Twitter Shared-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@grow_br" />
+    <meta name="twitter:creator" content="@greenmind_br" />
+    <meta property="og:url" content="http://growbr.org/" />
+    <meta property="og:title" content="Site em Construção" />
+    <meta property="og:description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento." />
+    <meta property="og:image" content="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" />
+    <!-- for Google -->
+    <meta name="description" content="GrowBr - O conhecimento precisa ser compartilhado." />
+    <meta name="keywords" content="Segurança da Informação , Hacking , Hacker , Desenvolvimento , Conhecimento , Livre , C , Python , PHP , Assembly , SQL , SQL Injection , Exploit , Download , Curso Hacker , Curso Desenvolvimento , ABase , Laboratorio , Invasão , Linux , Redes , Shell Script" />
+    <meta name="author" content="GreenMind" />
+
+
+</head>
+<body>
+
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p>greenmind <i class="fa fa-envelope-o"></i> growbr.org</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/grow_br"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/growbr"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projetos <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/abase">ABase</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entre em contato <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/ajude/">Ajude o projeto</a></li>
+                                <li><a href="/contato/">Contato</a></li>
+                                <li><a href="/newsletter/">Newsletter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Inicio GreenMindCMS -->
+        <!--
+<section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="item active" style="background-image: url(/LibThemes/ThemeGrowBr/assets/images/slider/capa.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="/LibThemes/ThemeGrowBr/assets/images/slider/img1.png" class="img-responsive">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(/LibThemes/ThemeGrowBr/assets/images/slider/capa2.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="/LibThemes/ThemeGrowBr/assets/images/slider/img2.png" class="img-responsive">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(/LibThemes/ThemeGrowBr/assets/images/slider/capa4.jpg)">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="/LibThemes/ThemeGrowBr/assets/images/slider/img3.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+        <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="next hidden-xs" href="#main-slider" data-slide="next">
+        <i class="fa fa-chevron-right"></i>
+    </a>
+</section>
+
+-->
+
+<section id="feature" >
+    <div class="container">
+       <div class="center wow fadeInDown">
+            <a href="/abase/inicio/"><h2>ABase</h2></a>
+            <p class="lead">
+              ABase é um projeto que tem a meta de formar e compartilhar conhecimento de forma gratuita para toda e qualquer pessoa que queira aprender. Aqui você vai ter o caminho para seguir e abrir a mente para técnicas e atitudes que não tinha antes de conhecer o projeto.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="features">
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <a href="/abase/linux/" target="_blank"><i class="fa fa-linux"></i></a>
+                        <h2>Linux</h2>
+                        <h3>Linux é a porta de entrada , deseja seguir em frente?</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <a href="/abase/desenvolvimento/shell-script/" target="_blank"><i class="fa fa-cog"></i></a>
+                        <h2>Shell Script</h2>
+                        <h3>Aprenda bash para agilizar e automatizar processos.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <a href="/abase/redes/" target="_blank"><i class="fa fa-globe"></i></a>
+                        <h2>Redes</h2>
+                        <h3>Aprenda sobre protocolos e serviços de redes.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <a href="/abase/web-hacking/" target="_blank"><i class="fa fa-users"></i></a>
+                        <h2>Web Hacking</h2>
+                        <h3>Conheça técnicas e blinde suas aplicações web.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <a hre="/abase/desenvolvimento/" target="_blank"><i class="fa fa-cogs"></i></a>
+                        <h2>Desenvolvimento</h2>
+                        <h3>Você decide entre C ,PHP, Python ou até Assembly.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <a href="/abase/laboratorios/" target="_blank"><i class="fa fa-flask"></i></a>
+                        <h2>Laboratórios</h2>
+                        <h3>Crie ou faça download de laboratórios para estudo.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="middle">
+    <div class="container">
+      <div class="center wow fadeInDown">
+           <h2>Conheça tudo</h2>
+           <p class="lead">
+             ABase é um projeto que tem a meta de formar e compartilhar conhecimento de forma gratuita para toda e qualquer pessoa que queira aprender. Aqui você vai ter o caminho para seguir e abrir a mente para técnicas e atitudes que não tinha antes de conhecer o projeto.
+           </p>
+       </div>
+        <div class="row">
+          <div class="col-sm-6 wow fadeInDown">
+              <div class="accordion">
+                  <h2>Porque deveria baixar Laboratórios?</h2>
+                  <div class="panel-group" id="accordion1">
+                    <!-- primeiro-->
+                    <div class="panel panel-default">
+                      <div class="panel-heading active">
+                        <h3 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#razoesLab1" href="#razoesLab1">
+                            Estude em um ambiente controlado
+                            <i class="fa fa-angle-right pull-right"></i>
+                          </a>
+                        </h3>
+                      </div>
+
+                      <div id="razoesLab1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="media accordion-inner">
+                                  <div class="media-body">
+                                       <h4>Ambiente controlado</h4>
+                                       <p>Com laboratórios você não precisa se preocupar em estudar , invadir ou danificar as maquinas pois você pode realizar clones e caso danifique é só colocar outra para rodar e sem perigo da PF bater a sua porta.</p>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- segundo -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#razoesLab2" href="#razoesLab2">
+                            Analise completa do ataque
+                            <i class="fa fa-angle-right pull-right"></i>
+                          </a>
+                        </h3>
+                      </div>
+                      <div id="razoesLab2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <h4>Analise trafego</h4>
+                          Analise todo o trafego de um ataque e saiba qual a melhor solução e qual a menos barulhenta e esteja preparado para a vida real onde não se pode ter erros
+                        </div>
+                      </div>
+                    </div>
+                    <!-- terceiro -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#razoesLab3" href="#razoesLab3">
+                            Crie sua rede de Laboratórios
+                            <i class="fa fa-angle-right pull-right"></i>
+                          </a>
+                        </h3>
+                      </div>
+                      <div id="razoesLab3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <h4>Um Laboratório para cada ocasião</h4>
+                            Monte sua rede de laboratórios dos mais diversos tipos seja eles linux , windows , mobile e até web. Monte e configure do seu jeito , e tenha controle total em suas explorações.
+                        </div>
+                      </div>
+                    </div>
+                  </div><!--/#accordion1-->
+              </div>
+          </div>
+
+          <div class="col-sm-6 wow fadeInDown">
+              <div class="accordion">
+                  <h2>Duvidas frequentes</h2>
+                  <div class="panel-group" id="accordion1">
+                    <div class="panel panel-default">
+                      <div class="panel-heading active">
+                        <h3 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#duvidas1" href="#duvidas1">
+                            Qual o valor para participar do projeto?
+                            <i class="fa fa-angle-right pull-right"></i>
+                          </a>
+                        </h3>
+                      </div>
+                      <div id="duvidas1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="media accordion-inner">
+                                  <div class="media-body">
+                                       <h4>Qual o valor?</h4>
+                                       <p>Você não paga nada para participar do projeto , mais caso você queira pode fazer doações para ajudar a manter o projeto funcionando e ainda receber brindes.</p>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#duvidas2" href="#duvidas2">
+                            Como o conteúdo é formado?
+                            <i class="fa fa-angle-right pull-right"></i>
+                          </a>
+                        </h3>
+                      </div>
+                      <div id="duvidas2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <h4>De onde vem o conteúdo?</h4>
+                            Todo o conteúdo é formado por voluntários e pessoas que tenham o interesse em participar e compartilhar conteúdo e conhecimento. Todos serão bem vindos e nenhuma taxa será cobrada , conhecimento livre e compartilhado
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#duvidas3" href="#duvidas3">
+                            Crie sua rede de Laboratórios
+                            <i class="fa fa-angle-right pull-right"></i>
+                          </a>
+                        </h3>
+                      </div>
+                      <div id="duvidas3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <h4>Um Laboratório para cada ocasião</h4>
+                            Monte sua rede de laboratórios dos mais diversos tipos seja eles linux , windows , mobile e até web. Monte e configure do seu jeito , e tenha controle total em suas explorações.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+</section><!--/#middle-->    <!-- Final GreenMindCMS -->
+
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Blog</h3>
+                        <ul>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/blog/categorias/">Categorias</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>ABase</h3>
+                        <ul>
+                            <li><a href="/abase/linux/">Linux</a></li>
+                            <li><a href="/abase/desenvolvimento/shell-script/">Shell Script</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Projetos</h3>
+                        <ul>
+                            <li><a href="/abase/">ABase</a></li>
+                            <li><a href="#">GreenmindCMS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Laboratórios</h3>
+                        <ul>
+                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">Windows</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Compartilhe o seu conhecimento.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a target="_blank" href="#" title="Projeto GrowBr by GreenMind">GrowBr</a> 2016</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/LibThemes/ThemeGrowBr/assets/js/jquery.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/bootstrap.min.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/jquery.isotope.min.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/main.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/wow.min.js"></script>
+    <!--Inicio JS facebook post -->
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Final JS facebook post -->
+
+    <!-- Inicio Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75149693-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Final Google Analytics-->
+</body>
+</html>
