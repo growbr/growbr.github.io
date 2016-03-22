@@ -3,7 +3,7 @@
     <title><![CDATA[GrowBr]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2016-03-22T18:43:50-03:00</updated>
+    <updated>2016-03-22T18:47:59-03:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -11,9 +11,7 @@
             <link href="/blog/2016/03/22/participe-do-ctf-pwn2win"/>
             <updated>2016-03-22T00:00:00-03:00</updated>
             <id>/blog/2016/03/22/participe-do-ctf-pwn2win</id>
-            <content type="html"><![CDATA[<p><img src="http://growbr.org/cdn/imagem-posts/Pwn2Win-Divulgacao.jpg" alt="Pwn2Win" title="Pwn2Win" /></p>
-
-<p>O principal objetivo do Pwn2Win CTF é ajudar a promover o maravilhoso mundo das competições Capture the Flag no Brasil, e mostrar que esse tipo de evento é extremamente útil para a formação intelectual e profissional dos participantes, pois exercita o raciocínio lógico, trabalho em equipe, e capacita os players a pensar "fora do caixa" na resolução de problemas diversos.</p>
+            <content type="html"><![CDATA[<p>O principal objetivo do Pwn2Win CTF é ajudar a promover o maravilhoso mundo das competições Capture the Flag no Brasil, e mostrar que esse tipo de evento é extremamente útil para a formação intelectual e profissional dos participantes, pois exercita o raciocínio lógico, trabalho em equipe, e capacita os players a pensar "fora do caixa" na resolução de problemas diversos.</p>
 
 <p>Com challenges mais complexos do que na primeira edição, buscamos novamente encontrar os verdadeiros leets brasileiros nesta competição.</p>
 
