@@ -3,7 +3,7 @@
     <title><![CDATA[GrowBr]]></title>
     <link href="/blog/tags/Blog.xml" rel="self"/>
     <link href="/"/>
-    <updated>2016-03-22T18:23:54-03:00</updated>
+    <updated>2016-03-22T18:43:50-03:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -11,7 +11,9 @@
             <link href="/blog/2016/03/22/participe-do-ctf-pwn2win"/>
             <updated>2016-03-22T00:00:00-03:00</updated>
             <id>/blog/2016/03/22/participe-do-ctf-pwn2win</id>
-            <content type="html"><![CDATA[<p>O principal objetivo do Pwn2Win CTF é ajudar a promover o maravilhoso mundo das competições Capture the Flag no Brasil, e mostrar que esse tipo de evento é extremamente útil para a formação intelectual e profissional dos participantes, pois exercita o raciocínio lógico, trabalho em equipe, e capacita os players a pensar "fora do caixa" na resolução de problemas diversos.</p>
+            <content type="html"><![CDATA[<p><img src="http://growbr.org/cdn/imagem-posts/Pwn2Win-Divulgacao.jpg" alt="Pwn2Win" title="Pwn2Win" /></p>
+
+<p>O principal objetivo do Pwn2Win CTF é ajudar a promover o maravilhoso mundo das competições Capture the Flag no Brasil, e mostrar que esse tipo de evento é extremamente útil para a formação intelectual e profissional dos participantes, pois exercita o raciocínio lógico, trabalho em equipe, e capacita os players a pensar "fora do caixa" na resolução de problemas diversos.</p>
 
 <p>Com challenges mais complexos do que na primeira edição, buscamos novamente encontrar os verdadeiros leets brasileiros nesta competição.</p>
 
@@ -40,7 +42,7 @@
 <h1 id="quer-treinar-%3F">Quer Treinar ?</h1>
 
 <p>O pessoal do <a href="http://www.insert.uece.br/">INSERT</a> criou uma plataforma online com desafios de CTFs para as equipes e demais interessados terem a oportunidade de se preparar e aprender segurança da informação de forma prática. Conheça o Shellter Labs!
-<img src="http://growbr.org/CDN/imagem-posts/shelter.png" alt="Shellter Labs" title="Shellter Labs!" /></p>
+<img src="http://growbr.org/cdn/imagem-posts/shelter.png" alt="Shellter Labs" title="Shellter Labs!" /></p>
 
 <h1 id="qual-%C3%A9-o-p%C3%BAblico-alvo%3F">Qual é o público alvo?</h1>
 
