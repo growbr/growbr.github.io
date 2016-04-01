@@ -42,7 +42,7 @@ ul {
 .page-header a {
   z-index: 5;
   display: block;
-  background-color: #ecf0f5;
+  background-color: #ECF0F5;
   color: #000;
 }
 .page-header span::before,

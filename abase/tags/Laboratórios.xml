@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[GrowBr]]></title>
+    <link href="/abase/tags/Laboratórios.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2016-03-31T22:35:59-03:00</updated>
+    <id>/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Laboratório Hacker eSecurity]]></title>
+            <link href="/blog/2016/03/31/laboratorio-hacker-esecurity"/>
+            <updated>2016-03-31T00:00:00-03:00</updated>
+            <id>/blog/2016/03/31/laboratorio-hacker-esecurity</id>
+            <content type="html"><![CDATA[<p>A um tempo a <a href="esecurity.com.br/">eSecurity</a> mantem um projeto que se chama Laboratório Hacker , o projeto nada mais era que um site com diversas falhas para estudo , com o tempo infelizmente o site saiu do AR porem a VM do projeto foi compartilhada para download.</p>
+
+<p>Entre as falhas temos na VM</p>
+
+<ul>
+<li>Wordpress</li>
+<li>Joomla</li>
+<li>Escalação de previlegios</li>
+<li>Brute Force</li>
+<li>Command Execution</li>
+<li>CSRF</li>
+<li>File Inclusion</li>
+<li>SQLInjection</li>
+<li>SQLInjection (bind)</li>
+<li>Upload</li>
+<li>XSS Reflected</li>
+<li>XSS Stored</li>
+</ul>
+
+<h2 id="o-que-precisamos-%3F">O que precisamos ?</h2>
+
+<p>Você pode usar a Maquina Virtual em qualquer sistema operacional , só é necessário algum software de virtualização. Recomendamos fortemente o uso do VirtualBox que está disponível para diversos sistemas Linux , Windows , OS X e até Solares.</p>
+
+<blockquote>
+  <p>Caso tenha dificudades aqui [ABase configurando VirtualBox] , caso use outro programa de virtualização e acha interessante mande uma mensagem que em breve compartilhamos.</p>
+</blockquote>
+
+<h1 id="instalando-virtualbox">Instalando VirtualBox</h1>
+
+<p>Você pode aprender a instalar o <a href="https://www.growbr.org/abase/virtualização/virtualbox">VirtualBox aqui</a>.</p>
+
+<h2 id="importando-a-maquina-virtual">Importando a Maquina Virtual</h2>
+
+<p>Caso não saiba você pode encontrar um simple tutorial na <a href="https://www.growbr.org/abase/">ABase</a> aqui <a href="https://www.growbr.org/abase/virtualização/">nesse link</a>.</p>
+
+<blockquote>
+  <p>Aguarde em construção</p>
+</blockquote>
+
+<h2 id="onde-fazer-download-%3F">Onde fazer Download ?</h2>
+
+<p>O download da maquina virtual você pode fazer <a href="http://laboratoriohacker.com.br/">nesse link VM</a> , qualquer coisa mande uma mensagem para nós.</p>
+
+<blockquote>
+  <p>Aguarde em construção</p>
+</blockquote>
+
+<h2 id="qualquer-coisa-..">Qualquer coisa ..</h2>
+
+<p>Qualquer problema ou duvida entre em contato , ficaremos felizes em poder ajudar !
+Entre em contato com o <a href="http://growbr.org/contato/">GrowBr</a></p>
+
+<p><strong><a href="http://growbr.org/sobre/GreenMind">GreenMind</a>, O conhecimento precisa ser compartilhado!</strong></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Crie o seu primeiro Laboratório com o DVWA]]></title>
+            <link href="/blog/2016/03/31/DVWA-parte01"/>
+            <updated>2016-03-31T00:00:00-03:00</updated>
+            <id>/blog/2016/03/31/DVWA-parte01</id>
+            <content type="html"><![CDATA[<p>Hoje vamos conhecer um projeto chamado Damn Vulnerable Web App ou mais conhecido como DVWA. Quem deve conhecer o DVWA ?</p>
+
+<ul>
+<li>Profissionais de segurança</li>
+<li>Desenvolvedores web</li>
+<li>Professores</li>
+<li>Estudantes</li>
+</ul>
+
+<p>Algumas das falhas que podemos encontrar no DVWA.</p>
+
+<ul>
+<li>Brute Force</li>
+<li>Command Execution</li>
+<li>CSRF</li>
+<li>File Inclusion</li>
+<li>SQLInjection</li>
+<li>SQLInjection (bind)</li>
+<li>Upload</li>
+<li>XSS Reflected</li>
+<li>XSS Stored</li>
+</ul>
+
+<p>DVWA é uma aplicação web desenvolvida em PHP e MySQL (mais tambem funciona com o PostgreSQL)repleta de vulnerabilidades ,os objetivos do projeto é ajudar profissionais de segurança para testar suas habilidades e ferramentas em um ambiente controlado , ajudar desenvolvedores web a compreender melhor os processos de segurança de uma aplicações web e ajudar professores e estudantes em um ambiente controlado para estudos em sala de aula.</p>
+
+<blockquote>
+  <p>O objetivo do DVWA é praticar algumas das vulnerabilidades web mais comuns, com vários níveis de dificuldade, com uma interface simples e direta.</p>
+</blockquote>
+
+<p>O Projeto é da <a href="https://www.randomstorm.com/">RandomStorm</a> e todo o codigo está no <a href="https://github.com/RandomStorm/DVWA">repositório do github</a> junto com a <a href="https://github.com/RandomStorm/DVWA/blob/master/docs/DVWA_v1.3.pdf">documentação DVWA</a> (versão 1.3) , na documentação você conhece melhor o DVWA.</p>
+
+<h2 id="recomenda%C3%A7%C3%B5es">Recomendações</h2>
+
+<p>Por ter diversas falhas de segurança não é recomendado instalar o DVWA em alguma hospedagem publica , ou algum tipo de servidor web em funcionamento pois isso pode causar muitas dores de cabeça , acredite!</p>
+
+<blockquote>
+  <p>Eu <a href="http://growbr.org/sobre/GreenMind">GreenMind</a> recomendo fortemente o uso de uma maquina virtual de preferencia algum sistema linux rodando , eu uso o Debian e não tenho problemas !</p>
+</blockquote>
+
+<h2 id="antes-de-instalar">Antes de instalar</h2>
+
+<p>Como já deve saber o DVWA é uma aplicação em PHP e Mysql (tambem funciona no postgreSQL) e o que precisamos ? Simplesmente um servidor web como o Apache ou o Nginx e o banco de dados Mysql instalado.</p>
+
+<blockquote>
+  <p>No windowns e possivelmente no Mac usaremos o XAMPP</p>
+</blockquote>
+
+<h2 id="vej%C3%A1-todos-os-laborat%C3%B3rios">Vejá todos os Laboratórios</h2>
+
+<p>Entre na ABase e <a href="https://www.growbr.org/abase/laboratorios/">Veja todos os Labotatórios</a> .</p>
+
+<h2 id="instalando-e-configurando-em-um-sistema-linux">Instalando e configurando em um sistema Linux</h2>
+
+<p>Aguarde <a href="https://www.growbr.org/abase/laboratorios/DVWA/linux">Instalando o DVWA no Linux</a></p>
+
+<blockquote>
+  <p>Aguarde que está em contrução</p>
+</blockquote>
+
+<h2 id="instalando-e-configurando-em-um-sistema-windows">Instalando e configurando em um sistema Windows</h2>
+
+<p>Aguarde <a href="https://www.growbr.org/abase/laboratorios/DVWA/windows">Instalando o DVWA no Windows</a></p>
+
+<blockquote>
+  <p>Aguarde que está em contrução</p>
+</blockquote>
+
+<p><strong>GreenMind, O conhecimento precisa ser compartilhado!</strong></p>
+]]></content>
+        </entry>
+    </feed>
