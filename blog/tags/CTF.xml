@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[GrowBr]]></title>
+    <link href="/blog/tags/CTF.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2016-05-22T00:06:08-03:00</updated>
+    <id>/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Instalando e configurando o CTFd no C9]]></title>
+            <link href="/blog/2016/05/21/instalando-e-configurando-ctfd-no-c9"/>
+            <updated>2016-05-21T00:00:00-03:00</updated>
+            <id>/blog/2016/05/21/instalando-e-configurando-ctfd-no-c9</id>
+            <content type="html"><![CDATA[<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/01.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora vamos instalar o CTFd em uma VM em um projeto muito bacana chamado c9 , onde vamos ter uma web IDE em uma VM free para nós configurarmos e modificarmos nosso CTF.</p>
+
+<h2 id="conhecendo-o-c9">Conhecendo o C9</h2>
+
+<p>O C9 é um projeto muito bacana , mais não vou perder muito tempo falando sobre ele. Recomendo um post do [Tabless] e <a href="http://tableless.com.br/programando-na-nuvem-com-o-cloud9/">conheça um pouco mais sobre o c9.io</a></p>
+
+<h2 id="criando-nossa-conta">Criando nossa conta</h2>
+
+<p>Vamos entrar no C9.io e criar nossa conta para começar os testes ..</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/2.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Podemos criar nesse link : <a href="https://c9.io/signup">Criando conta no C9</a></p>
+
+<p>Vamos inserir nosso <strong>Nome</strong></p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/3.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos inserir nosso <strong>Username</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/4.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Algumas informações adicionais</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/5.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Confirmação dos dados</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/6.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Verificar se não somos BOTS (mal sabe eles haha)</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/7.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora fomos redirecionados , vamos confirmar nossos dados</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/8.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Precisamos criar uma senha e depois logar novamente.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/9.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="criando-nossa-vm">Criando nossa VM</h2>
+
+<p>Vamos criar nossa VM e começar nossos testes.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/10.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos inserir um nome e uma descrição para nossa VM.</p>
+
+<p>Tambem é necessario escolher qual tipo de VM vamos querer , nesse caso vamos escolher uma <strong>blank</strong> , mais poderiamos escolher uma com <strong>Python</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/11.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="instalando-o-projeto">Instalando o projeto</h2>
+
+<h2 id="na-ide">Na IDE</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/12.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="clonando-o-ctfd">Clonando o CTFd</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/13.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> git clone https://github.com/isislab/CTFd.git
+</code></pre>
+
+<h2 id="instalando-dependencias-do-ctfd">Instalando dependencias do CTFd</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/14.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos listar os arquivos , em seguida vamos entrar no diretorio <strong>CTFd</strong> e instalar as dependencias.</p>
+
+<pre><code class="sh"> cd CTFd/
+ sudo ./prepare.sh
+</code></pre>
+
+<h2 id="nosso-arquivo-de-configura%C3%A7%C3%A3o">Nosso arquivo de configuração</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/15.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>O arquivo de configuração do <strong>CTFd</strong> fica em</p>
+
+<pre><code class="sh"> CTFd/config.py
+</code></pre>
+
+<p>Por padrão nosso CTF funciona na porta <strong>4000</strong> , vamos modiicar para ele funcionar na porta <strong>8081</strong> é bem simples!</p>
+
+<p>Por padrão ele é</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/16.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Após modificarmos vai ficar da seguinte forma</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/17.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="iniciando-nosso-ctf">Iniciando nosso CTF</h2>
+
+<p>É bem simples , vamos apenas executar o arquivo <strong>server.py</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/18.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> python serve.py
+</code></pre>
+
+<h2 id="tudo-on">Tudo ON</h2>
+
+<p>Como já era de se esperar nosso CTF está online , mais paramos por aqui!</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/19.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>No proximo POST vamos criar a nossa indentidade nesse CTF incrivel!</p>
+
+<h2 id="configura%C3%A7%C3%A3o-minima">Configuração minima</h2>
+
+<p>A configuração minima como criar Admin , usuario normal , configurar challeges , testar <strong>keys</strong> e o CTF podemos aprender no <a href="http://growbr.org/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd">Criando seu proprio CTF com CTFd</a></p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Criando seu proprio Capture The Flag com o CTFd]]></title>
+            <link href="/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd"/>
+            <updated>2016-05-21T00:00:00-03:00</updated>
+            <id>/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd</id>
+            <content type="html"><![CDATA[<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/01-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Essa VM que usei é um Debian8(Jessie) , não tem nada instalado e configurado! Apenas o sistema Debian rodando limpo em linha de comando , vamos instalar tudo e no final vamos ter uma plataforma para criar seus próprios Capture The Flag.</p>
+
+<h2 id="instalando-o-sudo">Instalando o sudo</h2>
+
+<p>O <strong>sudo</strong> permite um usuário em particular execute vários comandos como super usuário sem que possua sua senha, ou seja sem a senha do <strong>root</strong>.</p>
+
+<p>Precisamos de privilégios para isso então precisamos logar como <strong>root</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/02-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Para isso vamos instalar o <strong>sudo</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/03-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"># apt-get install sudo
+</code></pre>
+
+<h2 id="configura%C3%A7%C3%A3o-sudo">Configuração sudo</h2>
+
+<p>Agora vamos adicionar um usuário ao grupo <strong>sudo</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/04-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> # adduser USUARIO sudo
+</code></pre>
+
+<p>Depois vamos testar dando um simples comando <strong>ifconfig</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/05-ctf.png" class="img-responsive" alt="Responsive image">
+Veja que é necessário colocar sua senha de usuário , é possível que precise reiniciar a <strong>VM</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/06-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="atualizando-sistema">Atualizando sistema</h2>
+
+<p>Para deixar nosso sistema atualizado vamos dar um <strong>upgrade</strong> seguindo de um <strong>upgrade</strong> para deixar nosso sistema atualizado.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/07-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> sudo apt-get update -y
+ sudo apt-get upgrade -y
+</code></pre>
+
+<h2 id="instalando-ssh">Instalando SSH</h2>
+
+<p>Agora vamos instalar o serviço de <strong>SSH</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/08-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> sudo apt-get install openssh-server openssh-client
+</code></pre>
+
+<h2 id="instalando-git">Instalando Git</h2>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/09-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> sudo apt-get install git
+</code></pre>
+
+<h2 id="controlando-via-ssh">Controlando via SSH</h2>
+
+<p>Como é uma VM essa maquina poderia estar em qualquer lugar da sua casa ou até do mundo se for usar algum serviço de hospedagem para o seu servidor , para isso
+vamos ter acesso de nossa maqina via <strong>SSH</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/10-ctf.png" class="img-responsive" alt="Responsive image">
+Veja que primeiro demos um <strong>start</strong> no serviço <strong>SSH</strong>.</p>
+
+<pre><code class="sh"> sudo service ssh start
+</code></pre>
+
+<p>Em seguida vemos nosso IP da nossa interface <strong>eth0</strong>.</p>
+
+<pre><code class="sh"> sudo ifconfig eth0
+</code></pre>
+
+<p>Caso queira ver de todas elas</p>
+
+<pre><code class="sh">sudo ifconfig
+</code></pre>
+
+<p>Agora em nossa maquina vamos logar no servidor
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/11-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> ssh usuario@192.168.0.111
+</code></pre>
+
+<p>Nesse caso <strong>usuario</strong> é seu nome de usuário , já <strong>192.168.0.111</strong> no caso é o <strong>IP</strong> do seu <strong>Servidor</strong>.</p>
+
+<p>Em seguida é necessário colocar a <strong>senha</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/12-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="baixando-projeto">Baixando projeto</h2>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/13-ctf.png" class="img-responsive" alt="Responsive image">
+Assim que logamos no serviço <strong>SSH</strong> vamos dar um <strong>pwd</strong> para ver onde estamos (diretório).</p>
+
+<pre><code class="sh"> pwd
+</code></pre>
+
+<p>Em seguida vamos clonar o projeto <strong>CTFd</strong>.</p>
+
+<pre><code class="sh"> git clone https://github.com/isislab/CTFd.git
+</code></pre>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/14-ctf.png" class="img-responsive" alt="Responsive image">
+Em seguida vamos listar o nosso diretório ver se o projeto está OK.</p>
+
+<pre><code class="sh"> ls
+</code></pre>
+
+<h2 id="instalando-depend%C3%AAncias">Instalando dependências</h2>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/15-ctf.png" class="img-responsive" alt="Responsive image">
+Está tudo <strong>OK</strong> como o nosso projeto , agora precisamos entrar na pasta e instalar as dependências.</p>
+
+<pre><code class="sh"> cd CTFd/
+ ls
+</code></pre>
+
+<p>Vamos começar a instalar as dependências , do projeto.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/16-ctf.png" class="img-responsive" alt="Responsive image">
+Veja que dentro da pasta do projeto '''CTFd''' tem um arquivo chamado <strong>prepare.sh</strong> ele é um script que vai instalar todas as dependências do nosso projeto , para executar é simples !</p>
+
+<pre><code class="sh"> sudo ./prepare.sh
+</code></pre>
+
+<p>Esse arquivo <strong>prepare.sh</strong> é o arquivo responsável por instalar as dependências do projeto <strong>CTFd</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/17-ctf.png" class="img-responsive" alt="Responsive image">
+Em seguida faça</p>
+
+<h2 id="iniciando-o-ctfd">Iniciando o CTFd</h2>
+
+<pre><code class="sh"> python server.py
+</code></pre>
+
+<p>Vai iniciar o serviço , por padrão ele funciona na <strong>porta 4000</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/18-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora nosso CTF já esta funcionando , agora precisamos fazer algumas configurações.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/19-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Já estamos na pagina principal do projeto , vamos realizar o <strong>login</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/20-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Espero que não tenha esquecido sua senha , vamos fazer login e adicionar nosso primeiro <strong>Challenges</strong>.</p>
+
+<p>Assim que logado você vai ser redirecionado para a pagina de <strong>Challenges</strong> , como acabamos de configurar nosso projeto ainda não tem nenhum , vamos configurar ?
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/21-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Está em branco , vamos criar um simples <strong>Challenge</strong> para testarmos o projeto e ver se está tudo <strong>OK</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/22-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Está tudo OK , vamos cadastrar outro usuário para testar.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/23-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos para a pagina para registrar novos usuários , em seguida vamos cadastrar um usuário para teste.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/24-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Ok , apos o usuário criado a pagina é redirecionada para a pagina
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/25-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora vamos resolver a <strong>challenge</strong> que criamos com o nosso <strong>admin</strong>.
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/26-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos testar uma <strong>key</strong> que não é verdadeira para testarmos , aparece uma mensagem em vermelho no rodapé..
+<img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/27-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora vamos resolver a <strong>Key</strong> , o resultado vai ser semelhante ! A diferença é uma mensagem de sucess em verde , veja agora a aba de <strong>1 solves</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/Criando-CTF-com-CTFd/28-ctf.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Alem de tudo isso temos uma área para a configuração do <strong>CTF</strong>. Podemos configurar <strong>EMAIL</strong> , o inicio e o fim do <strong>CTF</strong></p>
+
+<p>Vale a pena dar uma olhada !</p>
+
+<p>Isso é o básico que podemos fazer com esse incrível projeto que é <strong>opensource</strong> , vamos valorizar esse tipo de projeto !</p>
+
+<p>No site Oficial , lá é possível você saber mais sobre o projeto e ainda pode alugar um servidor para realizar seu CTF com uma galera que já se divertindo a um tempo já por apenas 5 Dolares.</p>
+
+<p>Link do projeto: <a href="https://ctfd.io">ctfd</a></p>
+
+<p>Link do github: <a href="https://github.com/isislab/CTFd">CTFd Github</a></p>
+
+<h2 id="no-proximo-post">No proximo post</h2>
+
+<p>Vamos instalar o CTF em uma VM na nuvem e mostrar o caminho para fazer as suas configurações e modificações de forma gratuita.</p>
+]]></content>
+        </entry>
+    </feed>

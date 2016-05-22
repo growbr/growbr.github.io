@@ -1,0 +1,437 @@
+<!--
+  GrowBr é um projeto que tem como foco compartilhar conhecimento e arquivos sem cobrar nada.
+  Agradecimentos ao GreenMind que é responsavel pelo desenvolvimento e pela configuração da infra
+  Agradecimentos ao shapebootstrap que compartilhou o template Corlate
+  Agradecimentos a comunidade que ajuda e sempre vai ajudar o projeto
+  Duvidas ? greenmind[at]growbr.org
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento.">
+    <meta name="author" content="GreenMind">
+    <title>GrowBr | Instalando e configurando o CTFd no C9</title>
+    <link href="/LibThemes/ThemeGrowBr/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/animate.min.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/growbr.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/responsive.css" rel="stylesheet">
+    <link href="/LibThemes/ThemeGrowBr/assets/css/google-resposive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/LibThemes/ThemeGrowBr/assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/LibThemes/ThemeGrowBr/assets/images/ico/green-57-precomposed.png">
+    <!-- Facebook Shared-->
+    <meta property="og:url" content="http://growbr.org/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GrowBr" />
+    <meta property="og:description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento." />
+    <meta property="og:image" content="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" />
+    <!-- Twitter Shared-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@grow_br" />
+    <meta name="twitter:creator" content="@greenmind_br" />
+    <meta property="og:url" content="http://growbr.org/" />
+    <meta property="og:title" content="Site em Construção" />
+    <meta property="og:description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento." />
+    <meta property="og:image" content="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" />
+    <!-- for Google -->
+    <meta name="description" content="GrowBr - O conhecimento precisa ser compartilhado." />
+    <meta name="keywords" content="Segurança da Informação , Hacking , Hacker , Desenvolvimento , Conhecimento , Livre , C , Python , PHP , Assembly , SQL , SQL Injection , Exploit , Download , Curso Hacker , Curso Desenvolvimento , ABase , Laboratorio , Invasão , Linux , Redes , Shell Script" />
+    <meta name="author" content="GreenMind" />
+	<!-- Teste Smartlook -->
+<!--
+	<script type="text/javascript">
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},s=d.getElementsByTagName('script')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='//rec.getsmartlook.com/bundle.js';s.parentNode.insertBefore(c,s);
+    })(document);
+    smartlook('init', 'f59fc53870103fd0d2595854e272a8240f83191b');
+	</script>
+-->
+	<!-- Final teste Smartlook-->
+
+</head>
+<body>
+
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p>greenmind <i class="fa fa-envelope-o"></i> growbr.org</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="https://www.facebook.com/growbr/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/grow_br"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/growbr"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projetos <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/abase">ABase</a></li>
+                                <li><a href="/compartilhe">Compartilhe</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entre em contato <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/ajude/">Ajude o projeto</a></li>
+                                <li><a href="/contato/">Contato</a></li>
+                                <li><a href="/newsletter/">Newsletter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pesquisar/">Pesquisar</a></li>
+                        <li><a href="/sobre/">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Inicio GreenMindCMS -->
+        <section id="blog" class="container wow fadeInDown">
+    <div class="blog">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-item">
+                  <!--
+                    <img class="img-responsive img-blog" src="images/blog/blog1.jpg" width="100%" alt="" />
+                  -->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-2 text-center">
+                                <div class="entry-meta">
+                                    <span id="publish_date">21/05/2016</span>
+                                    <span><i class="fa fa-user"></i> <a href="/sobre/GreenMind"> GreenMind</a></span>
+                                    <span><i class="fa fa-comment"></i> <a href="#disqus_thread">Comentários</a></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-10 blog-content">
+                                <h2>Instalando e configurando o CTFd no C9</h2>
+                                <p><p><img src="http://growbr.org/cdn/instalando-ctfd-c9/01.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora vamos instalar o CTFd em uma VM em um projeto muito bacana chamado c9 , onde vamos ter uma web IDE em uma VM free para nós configurarmos e modificarmos nosso CTF.</p>
+
+<h2 id="conhecendo-o-c9">Conhecendo o C9</h2>
+
+<p>O C9 é um projeto muito bacana , mais não vou perder muito tempo falando sobre ele. Recomendo um post do [Tabless] e <a href="http://tableless.com.br/programando-na-nuvem-com-o-cloud9/">conheça um pouco mais sobre o c9.io</a></p>
+
+<h2 id="criando-nossa-conta">Criando nossa conta</h2>
+
+<p>Vamos entrar no C9.io e criar nossa conta para começar os testes ..</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/2.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Podemos criar nesse link : <a href="https://c9.io/signup">Criando conta no C9</a></p>
+
+<p>Vamos inserir nosso <strong>Nome</strong></p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/3.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos inserir nosso <strong>Username</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/4.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Algumas informações adicionais</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/5.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Confirmação dos dados</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/6.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Verificar se não somos BOTS (mal sabe eles haha)</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/7.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Agora fomos redirecionados , vamos confirmar nossos dados</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/8.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Precisamos criar uma senha e depois logar novamente.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/9.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="criando-nossa-vm">Criando nossa VM</h2>
+
+<p>Vamos criar nossa VM e começar nossos testes.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/10.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos inserir um nome e uma descrição para nossa VM.</p>
+
+<p>Tambem é necessario escolher qual tipo de VM vamos querer , nesse caso vamos escolher uma <strong>blank</strong> , mais poderiamos escolher uma com <strong>Python</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/11.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="instalando-o-projeto">Instalando o projeto</h2>
+
+<h2 id="na-ide">Na IDE</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/12.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="clonando-o-ctfd">Clonando o CTFd</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/13.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> git clone https://github.com/isislab/CTFd.git
+</code></pre>
+
+<h2 id="instalando-dependencias-do-ctfd">Instalando dependencias do CTFd</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/14.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Vamos listar os arquivos , em seguida vamos entrar no diretorio <strong>CTFd</strong> e instalar as dependencias.</p>
+
+<pre><code class="sh"> cd CTFd/
+ sudo ./prepare.sh
+</code></pre>
+
+<h2 id="nosso-arquivo-de-configura%C3%A7%C3%A3o">Nosso arquivo de configuração</h2>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/15.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>O arquivo de configuração do <strong>CTFd</strong> fica em</p>
+
+<pre><code class="sh"> CTFd/config.py
+</code></pre>
+
+<p>Por padrão nosso CTF funciona na porta <strong>4000</strong> , vamos modiicar para ele funcionar na porta <strong>8081</strong> é bem simples!</p>
+
+<p>Por padrão ele é</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/16.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>Após modificarmos vai ficar da seguinte forma</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/17.png" class="img-responsive" alt="Responsive image"></p>
+
+<h2 id="iniciando-nosso-ctf">Iniciando nosso CTF</h2>
+
+<p>É bem simples , vamos apenas executar o arquivo <strong>server.py</strong>.</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/18.png" class="img-responsive" alt="Responsive image"></p>
+
+<pre><code class="sh"> python serve.py
+</code></pre>
+
+<h2 id="tudo-on">Tudo ON</h2>
+
+<p>Como já era de se esperar nosso CTF está online , mais paramos por aqui!</p>
+
+<p><img src="http://growbr.org/cdn/instalando-ctfd-c9/19.png" class="img-responsive" alt="Responsive image"></p>
+
+<p>No proximo POST vamos criar a nossa indentidade nesse CTF incrivel!</p>
+
+<h2 id="configura%C3%A7%C3%A3o-minima">Configuração minima</h2>
+
+<p>A configuração minima como criar Admin , usuario normal , configurar challeges , testar <strong>keys</strong> e o CTF podemos aprender no <a href="http://growbr.org/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd">Criando seu proprio CTF com CTFd</a></p>
+</p>
+
+                                <br><br><br>
+                                <div class="post-tags">
+                                                                        <strong>Categorias</strong><br>
+                                                                            <a href="/blog/categorias/Blog">Blog</a>                                                                            </p>
+                                                                  </div>
+
+                                <div class="post-tags">
+                                                                        <strong>Tags</strong><br>
+
+                                                                            <a href="/blog/tags/CTF">CTF</a>                                                                            </p>
+                                                                  </div>
+                                <div class="post-tags">
+                                  <strong>Compartilhe</strong><br>
+                                  <!-- inicio facebook -->
+                                  <div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+                                  </div>
+                                  <!-- final facebook-->
+                                  <br><br>
+                                  <!-- twitter-->
+                                    <a href="https://twitter.com/greenmindbr" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @greenmindbr</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                    <!-- final twitter-->
+                                  <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+                                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                                  <br/><br/>
+                                </div>
+                            </div>
+
+                            <!--Inicio sistema de paginação tranversal -->
+                                                        <center>
+                              <ul class="pagination">
+                                <li><a href="/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd"><i class="fa fa-long-arrow-left"></i>Criando seu proprio Capture The Flag com o CTFd</a></li>                                                              </ul>
+                            </center>
+                                                        <!--Final sistema de paginação tranversal -->
+
+                        </div>
+                    </div>
+                    </div><!--/.col-md-8-->
+
+                    <div class="col-md-12">
+                    <!-- Inicio Disqus -->
+
+                    <div id="disqus_thread"></div>
+                      <script>
+                      /**
+                      * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                      */
+                      /*
+                      var disqus_config = function () {
+                      this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+                      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                      };
+                      */
+                      (function() { // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+
+                      s.src = '//growbr.disqus.com/embed.js';
+
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                      })();
+                      </script>
+                      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                      <!-- Final Disqus-->
+
+                  </div>
+
+
+            <aside class="col-md-4">
+
+            </aside>
+
+
+
+        </div><!--/.row-->
+
+     </div><!--/.blog-->
+
+</section><!--/#blog-->
+
+
+    <!-- Final GreenMindCMS -->
+
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Blog</h3>
+                        <ul>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/blog/categorias/">Categorias</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>ABase</h3>
+                        <ul>
+                            <li><a href="/abase/linux/">Linux</a></li>
+                            <li><a href="/abase/desenvolvimento/shell-script/">Shell Script</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Projetos</h3>
+                        <ul>
+                            <li><a href="/abase/">ABase</a></li>
+                            <li><a href="/compartilhe/">Compartilhe</a></li>
+                            <li><a href="#">GreenmindCMS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Laboratórios</h3>
+                        <ul>
+                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">Windows</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Compartilhe o seu conhecimento.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a target="_blank" href="#" title="Projeto GrowBr by GreenMind">GrowBr</a> 2016</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/LibThemes/ThemeGrowBr/assets/js/jquery.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/bootstrap.min.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/jquery.isotope.min.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/main.js"></script>
+    <script src="/LibThemes/ThemeGrowBr/assets/js/wow.min.js"></script>
+    <!--Inicio JS facebook post -->
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Final JS facebook post -->
+
+    <!-- Inicio Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75149693-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Final Google Analytics-->
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GrowBr | Green Bot</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="/LibThemes/ThemeDocs/Lib/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/LibThemes/ThemeDocs/Lib/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/LibThemes/ThemeDocs/Lib/dist/css/skins/skin-black-light.css">
+    <link rel="stylesheet" href="/LibThemes/ThemeDocs/style.css">
+    <link rel="shortcut icon" href="/LibThemes/ThemeGrowBr/assets/images/ico/favicon.ico">
+    <!-- -->
+    <link rel="stylesheet" href="/LibThemes/ThemeDefault/github.css" />
+
+    <!-- Facebook Shared-->
+    <meta property="og:url" content="http://growbr.org/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Compartilhe Conhecimento!" />
+    <meta property="og:description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento." />
+    <meta property="og:image" content="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" />
+    <!-- Twitter Shared-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@grow_br" />
+    <meta name="twitter:creator" content="@greenmind_br" />
+    <meta property="og:url" content="http://growbr.org/" />
+    <meta property="og:title" content="Compartilhe Conhecimento!" />
+    <meta property="og:description" content="Grow Brasil é um projeto voltado para área de segurança da informação e que tem o intuito de compartilhar conhecimento." />
+    <meta property="og:image" content="/LibThemes/ThemeGrowBr/assets/images/logo/growbr-logo.png" />
+    <!-- for Google -->
+    <meta name="description" content="GrowBr - O conhecimento precisa ser compartilhado." />
+    <meta name="keywords" content="Segurança da Informação , Hacking , Hacker , Desenvolvimento , Conhecimento , Livre , C , Python , PHP , Assembly , SQL , SQL Injection , Exploit , Download , Curso Hacker , Curso Desenvolvimento , ABase , Laboratorio , Invasão , Linux , Redes , Shell Script" />
+    <meta name="author" content="GreenMind" />
+    <style>
+    /** quick fix because bootstrap <pre> has a background-color. */
+    pre code { background-color: inherit; }
+    </style>
+    <!-- Teste Smartlook -->
+<!--
+	<script type="text/javascript">
+    	window.smartlook||(function(d) {
+    	var o=smartlook=function(){ o.api.push(arguments)},s=d.getElementsByTagName('script')[0];
+    	var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    	c.charset='utf-8';c.src='//rec.getsmartlook.com/bundle.js';s.parentNode.insertBefore(c,s);
+    	})(document);
+    	smartlook('init', 'f59fc53870103fd0d2595854e272a8240f83191b');
+	</script>
+-->
+	<!-- Final teste Smartlook-->
+                
+  </head>
+  <body class="skin-black-light fixed" data-spy="scroll" data-target="#scrollspy">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <!-- Logo -->
+        <a href="/compartilhe" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>C</b>ompartilhe</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>C</b>ompartilhe</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Forum da comunidade</a></li>
+            <li>
+
+          </li>
+              <li><a href="/contato/">Seja um mentor</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <div class="sidebar" id="scrollspy">
+
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="nav sidebar-menu">
+            <li class="header">TRILHAS</li>
+            <li><a href="/abase/inicio"><i class="fa fa-play"></i> Siga as trilhas</a></li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-linux"></i>Arquivos</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/compartilhe/arquivos/">Home</a></li>
+
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Cursos</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/compartilhe/cursos">Home</a></li>
+
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Documentários</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/compartilhe/documentarios">Home</a></li>
+
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Laboratórios</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/compartilhe/laboratorios">Home</a></li>
+
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Livros</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/compartilhe/livros">Home</a></li>
+
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Scripts</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/compartilhe/scripts">Home</a></li>
+
+              </ul>
+            </li>
+
+<!--
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-linux"></i> Shell Script</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/abase/linuxninja/index.html">Home</a></li>
+                <li><a href="#">Sobre o PHP</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> C</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/abase/projetogafanhoto/index.html">Home</a></li>
+                <li><a href="#">Sobre o PHP</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Python</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/abase/projetogafanhoto/index.html">Home</a></li>
+                <li><a href="#">Sobre o PHP</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> PHP</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/abase/projetogafanhoto/index.html">Home</a></li>
+                <li><a href="#">Sobre o PHP</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+              </ul>
+            </li>
+            <li class="treeview" id="scrollspy-components">
+              <a href="javascript::;"><i class="fa fa-code"></i> Assembly</a>
+              <ul class="nav treeview-menu">
+                <li><a href="/abase/projetogafanhoto/index.html">Home</a></li>
+                <li><a href="#">Sobre o PHP</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+              </ul>
+            </li>
+-->
+            <li><a href="/contato/"><i class="fa fa-question-circle"></i> Entre em contato</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <!--
+        <div class="content-header">
+          <h1>
+            Compartilhe o seu conhecimento
+            <small>Current version 2.3.0</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Documentation</li>
+          </ol>
+        </div>
+      -->
+
+        <!-- Main content -->
+        <div class="content body">
+          <section id="introduction">
+      <!--Inicio teste Pesquisa Google -->
+      <h2 class="page-header"><a href="">Pesquisar em todo o site</a></h2>
+            <script>
+            (function() {
+              var cx = '010914010935307926597:qf--t2thls8';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                  '//cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+      <!--Final teste Pesquisa Google -->
+      <br>
+
+            <p class="lead">
+          <!-- INICIO SCULPIN POST -->
+            <h1 id="green-bot">Green Bot</h1>
+
+<h3 id="conte%C3%BAdo">Conteúdo</h3>
+
+<p>Mobile é a plataforma do futuro, e as Apps são parte importante desse cenário. Mas programar pensando no mundo multiplataforma de hoje é trabalhoso e custoso, sobretudo para quem vem da Web e está acostumado à portabilidade do HTML, do CSS e do JavaScript.</p>
+
+<p>Neste livro, Sérgio Lopes mostra o Cordova, a solução para Apps híbridas mais usada no mundo. Escreva um único código baseado em HTML5 e tenha Apps de verdade para iOS, Android e Windows Phone. Com projetos práticos, você vai ver Cordova desde o início até casos complexos de integração com hardware. Vai entender onde o PhoneGap se encaixa e até criar uma App com Ionic.</p>
+
+<h3 id="sumario">Sumario</h3>
+
+<dl>
+<dt>1 Aplicações mobile com Cordova e PhoneGap</dt>
+<dd>1.1 Aplicações híbridas</dd>
+
+<dd>1.2 O Cordova e o PhoneGap</dd>
+
+<dd>1.3 Cordova não é Web</dd>
+
+<dd>1.4 App ou Web</dd>
+
+<dd>1.5 Quando nativo, quando híbrido?</dd>
+
+<dd>1.6 A morte do Cordova</dd>
+
+<dd>1.7 O livro e o projeto</dd>
+
+<dt>2 A primeira versão da App</dt>
+<dd>2.1 O projeto CenourApp</dd>
+
+<dd>2.2 A primeira funcionalidade</dd>
+
+<dd>2.3 Uma App híbrida é uma página HTML</dd>
+
+<dd>2.4 Efeitos no HTML com CSS</dd>
+
+<dt>3 Adobe PhoneGap Build</dt>
+<dd>3.1 A diferença entre Cordova e PhoneGap</dd>
+
+<dd>3.2 O que é o PhoneGap Build</dd>
+
+<dd>3.3 Usando PhoneGap Build</dd>
+
+<dd>3.4 Uma App Android pronta para rodar</dd>
+
+<dd>3.5 Configurações do PhoneGap Build</dd>
+
+<dd>3.6 Ícone e Splash screen</dd>
+
+<dd>3.7 Rodando em modo fixo no Android</dd>
+
+<dd>3.8 Indo além com PhoneGap Build</dd>
+
+<dt>4 PhoneGap App</dt>
+<dd>4.1 PhoneGap Desktop App</dd>
+
+<dd>4.2 Um projeto PhoneGap</dd>
+
+<dd>4.3 PhoneGap Developer App</dd>
+
+<dt>5 Um ambiente real para trabalhar com Apps híbridas</dt>
+<dd>5.1 Por que usar só o PhoneGap não vai te levar muito longe</dd>
+
+<dd>5.2 Um ambiente local parrudo</dd>
+
+<dd>5.3 Sou usuário de Windows, não tenho um Mac!</dd>
+
+<dd>5.4 Sou usuário de Mac, não tenho um PC!</dd>
+
+<dd>5.5 Sou usuário Linux, o que faço?</dd>
+
+<dt>6 Preparando Cordova e Android</dt>
+<dd>6.1 Node.js</dd>
+
+<dd>6.2 Cordova</dd>
+
+<dd>6.3 Java SDK</dd>
+
+<dd>6.4 Android SDK</dd>
+
+<dd>6.5 Genymotion</dd>
+
+<dt>7 Começando uma App no Android</dt>
+<dd>7.1 Preparação do ambiente Cordova e Android</dd>
+
+<dd>7.2 Usando Cordova pela primeira vez</dd>
+
+<dd>7.3 Plataformas</dd>
+
+<dd>7.4 Rodando no Android</dd>
+
+<dd>7.5 Executando no aparelho Android</dd>
+
+<dd>7.6 Gerando um apk para distribuição</dd>
+
+<dt>8 Material Design</dt>
+<dd>8.1 O design do Google</dd>
+
+<dd>8.2 A Garçonapp</dd>
+
+<dd>8.3 O Materialize</dd>
+
+<dd>8.4 Itens em abas</dd>
+
+<dd>8.5 Efeitos de ondas do Material Design</dd>
+
+<dd>8.6 Customização do visual do Materialize</dd>
+
+<dd>8.7 Topo com título e ícones</dd>
+
+<dt>9 Componentes ricos na App</dt>
+<dd>9.1 Anotando o pedido</dd>
+
+<dd>9.2 Floating Action Button</dd>
+
+<dd>9.3 Modal</dd>
+
+<dd>9.4 Mais ajustes</dd>
+
+<dd>9.5 Testando no Android</dd>
+
+<dd>9.6 E o iOS?</dd>
+
+<dt>10 Preparando o ambiente para iOS</dt>
+<dd>10.1 Xcode</dd>
+
+<dd>10.2 ios-sim e ios-deploy</dd>
+
+<dd>10.3 Adicionando cordova-ios</dd>
+
+<dd>10.4 Testando em um dispositivo iOS</dd>
+
+<dd>10.5 Em outros projetos</dd>
+
+<dd>10.6 E para distribuir a App?</dd>
+
+<dt>11 Suporte ao Windows Phone e Windows Platform</dt>
+<dd>11.1 Preparando o Ambiente para Windows Phone</dd>
+
+<dd>11.2 Visual Studio e Emuladores</dd>
+
+<dd>11.3 Plataforma Windows no Cordova</dd>
+
+<dd>11.4 Rodando pelo Visual Studio</dd>
+
+<dd>11.5 Aparelho Windows Phone</dd>
+
+<dd>11.6 E para distribuir a App?</dd>
+
+<dt>12 Configurações do projeto</dt>
+<dd>12.1 Estrutura do config.xml</dd>
+
+<dd>12.2 Metadados do projeto</dd>
+
+<dd>12.3 Preferências</dd>
+
+<dd>12.4 Preferências por plataforma</dd>
+
+<dd>12.5 Preferências específicas de plataforma</dd>
+
+<dd>12.6 Ícone e splash screen</dd>
+
+<dd>12.7 Automatizando geração dos ícones e splash screens</dd>
+
+<dd>12.8 Engines</dd>
+
+<dt>13 Plugins no Cordova</dt>
+<dd>13.1 Mais poder com Cordova</dd>
+
+<dd>13.2 PhoneGap Barcode Scanner</dd>
+
+<dd>13.3 Lendo códigos de barras</dd>
+
+<dd>13.4 Integrando na App</dd>
+
+<dd>13.5 Uma boa status bar</dd>
+
+<dd>13.6 Configurando a status bar</dd>
+
+<dt>14 Serviços remotos</dt>
+<dd>14.1 A API da Cozinhapp</dd>
+
+<dd>14.2 Ajax na App</dd>
+
+<dd>14.3 CORS e Same Origin Policy</dd>
+
+<dd>14.4 Plugin Cordova Whitelist</dd>
+
+<dd>14.5 Intents e navegações</dd>
+
+<dt>15 Arquitetura do Cordova</dt>
+<dd>15.1 O que são as WebViews</dd>
+
+<dd>15.2 Uma App Cordova</dd>
+
+<dd>15.3 WebView com poderes</dd>
+
+<dd>15.4 Estrutura de um projeto Cordova</dd>
+
+<dd>15.5 Cordova não é Web</dd>
+
+<dd>15.6 Cara de App, jeito de App</dd>
+
+<dd>15.7 Boa performance é essencial</dd>
+
+<dd>15.8 Recursos interessantes da API do Cordova</dd>
+
+<dt>16 Introdução ao Ionic</dt>
+<dd>16.1 Sobre o Ionic</dd>
+
+<dd>16.2 Novo projeto</dd>
+
+<dd>16.3 Arquitetura da App</dd>
+
+<dd>16.4 Lista de bolos</dd>
+
+<dd>16.5 Dados dinâmicos</dd>
+
+<dd>16.6 Serviço REST</dd>
+
+<dd>16.7 Teste no device ou emulador</dd>
+
+<dd>16.8 Testando com Ionic View</dd>
+
+<dt>17 Single Page App com Ionic</dt>
+<dd>17.1 Detalhes do produto</dd>
+
+<dd>17.2 Finalizando o pedido</dd>
+
+<dd>17.3 Interface melhor com novos componentes</dd>
+
+<dd>17.4 Configurações do Cordova</dd>
+
+<dt>18 Cache e offline</dt>
+<dd>18.1 Estratégias para dados offline</dd>
+
+<dd>18.2 Salvando dados no dispositivo</dd>
+
+<dd>18.3 Solução Offline-first</dd>
+
+<dd>18.4 Outras implementações de offline</dd>
+
+<dd>18.5 Indo além no offline</dd>
+
+<dt>19 Testes, debug e compatibilidade</dt>
+<dd>19.1 Tipos de WebView</dd>
+
+<dd>19.2 Usando Crosswalk no Android</dd>
+
+<dd>19.3 Usando WKWebView no iOS 9</dd>
+
+<dd>19.4 Debug no Android</dd>
+
+<dd>19.5 Debug no iOS</dd>
+
+<dt>20 Publicação nas lojas</dt>
+<dd>20.1 Publicação da Play Store</dd>
+
+<dd>20.2 Publicação na Apple Store</dd>
+
+<dt>21 Indo além</dt>
+<dd></dd>
+</dl>
+
+<h3 id="se-voc%C3%AA-tiver-condi%C3%A7%C3%B5es-compre">Se você tiver condições compre</h3>
+
+<p>Esse projeto é voltado para pessoas que não tem condições para comprar , se você tem click na imagem e vá para o site da Casa do Codigo. Recomendamos!
+<a href="https://www.casadocodigo.com.br/products/livro-cordova-phonegap"><img src="https://cdn.shopify.com/s/files/1/0155/7645/products/KfILNc_rMuuHlT3Jgh1nLQWbAM9Ct8Y_3egeItyVI-s_size_mode_3_size_1024x768_large.jpeg" alt="" /></a></p>
+
+<h3 id="download">Download</h3>
+
+<p>Link 01 (Ativo)
+<a href="https://google.com"> <img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></a></p>
+
+<p>Link 02 (Reserva)
+<img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></p>
+
+<p>Link 03 (Reserva)
+<img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></p>
+
+<p>Link 04 (Reserva)
+<img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></p>
+
+<p>Link 05 (Reserva)
+<img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></p>
+
+<p>Link 06 (Reserva)
+<img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></p>
+
+<p>Link 07 (Reserva)
+<img src="http://icons.iconarchive.com/icons/hopstarter/mac-folders/48/Download-icon.png" alt="" /></p>
+          <!-- FINAL SCULPIN POST -->
+        </p>
+        </div><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>A</b> Base
+        </div>
+        <strong>Compartilhe </strong> o seu conhecimento.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <div class="pad">
+          This is an example of the control sidebar.
+        </div>
+      </aside><!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="/LibThemes/ThemeDocs/Lib/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="/LibThemes/ThemeDocs/Lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/LibThemes/ThemeDocs/Lib/plugins/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/LibThemes/ThemeDocs/Lib/dist/js/app.min.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="/LibThemes/ThemeDocs/Lib/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="/LibThemes/ThemeDocs/docs.js"></script>
+
+        
+        <script src="/LibThemes/ThemeDefault/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+        
+    <!-- disqus javascript -->
+    <script id="dsq-count-scr" src="//greenmindblog.disqus.com/count.js" async></script>
+
+    <!-- Inicio Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75149693-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Final Google Analytics-->
+  </body>
+</html>
