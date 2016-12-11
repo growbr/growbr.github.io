@@ -3,7 +3,7 @@
     <title><![CDATA[GrowBr]]></title>
     <link href="/blog/categorias/Blog.xml" rel="self"/>
     <link href="/"/>
-    <updated>2016-05-22T00:37:52-03:00</updated>
+    <updated>2016-12-11T18:37:44-02:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -11,122 +11,122 @@
             <link href="/blog/2016/05/21/instalando-e-configurando-ctfd-no-c9"/>
             <updated>2016-05-21T00:00:00-03:00</updated>
             <id>/blog/2016/05/21/instalando-e-configurando-ctfd-no-c9</id>
-            <content type="html"><![CDATA[<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/01.png" class="img-responsive" alt="Responsive image"></p>
+            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/01.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_01.png" alt="" /></a></p>
 
 <p>Agora vamos instalar o CTFd em uma VM em um projeto muito bacana chamado c9 , onde vamos ter uma web IDE em uma VM free para nós configurarmos e modificarmos nosso CTF.</p>
 
 <h2 id="conhecendo-o-c9">Conhecendo o C9</h2>
 
-<p>O C9 é um projeto muito bacana , mais não vou perder muito tempo falando sobre ele. Recomendo um post do <a href="http://tableless.com.br/">Tableless</a> e <a href="http://tableless.com.br/programando-na-nuvem-com-o-cloud9/">conheça um pouco mais sobre o c9.io</a></p>
+<p>O C9 é um projeto muito bacana , mais não vou perder muito tempo falando sobre ele. Recomendo um post do Tableless e conheça um pouco mais sobre o c9.io</p>
 
 <h2 id="criando-nossa-conta">Criando nossa conta</h2>
 
 <p>Vamos entrar no C9.io e criar nossa conta para começar os testes ..</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/02.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/02.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_02.png" alt="" /></a></p>
 
-<p>Podemos criar nesse link : <a href="https://c9.io/signup">Criando conta no C9</a></p>
+<p>Podemos criar nesse link : <a href="https://c9.io/signup/">Criando conta no C9</a></p>
 
 <p>Vamos inserir nosso <strong>Nome</strong></p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/03.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/03.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_03.png" alt="" /></a></p>
 
 <p>Vamos inserir nosso <strong>Username</strong>.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/04.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/04.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_04.png" alt="" /></a></p>
 
 <p>Algumas informações adicionais</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/05.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/05.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_05.png" alt="" /></a></p>
 
 <p>Confirmação dos dados</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/06.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/06.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_06.png" alt="" /></a></p>
 
 <p>Verificar se não somos BOTS (mal sabe eles haha)</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/07.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/07.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_07.png" alt="" /></a></p>
 
 <p>Agora fomos redirecionados , vamos confirmar nossos dados</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/08.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/08.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_08.png" alt="" /></a></p>
 
 <p>Precisamos criar uma senha e depois logar novamente.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/09.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/09.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_09.png" alt="" /></a></p>
 
 <h2 id="criando-nossa-vm">Criando nossa VM</h2>
 
 <p>Vamos criar nossa VM e começar nossos testes.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/10.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/10.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_10.png" alt="" /></a></p>
 
 <p>Vamos inserir um nome e uma descrição para nossa VM.</p>
 
 <p>Tambem é necessario escolher qual tipo de VM vamos querer , nesse caso vamos escolher uma <strong>blank</strong> , mais poderiamos escolher uma com <strong>Python</strong>.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/11.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/11.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_11.png" alt="" /></a></p>
 
 <h2 id="na-ide">Na IDE</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/12.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/12.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_12.png" alt="" /></a></p>
 
 <h2 id="clonando-o-ctfd">Clonando o CTFd</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/13.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/13.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_13.png" alt="" /></a></p>
 
-<pre><code class="sh"> git clone https://github.com/isislab/CTFd.git
+<pre><code> git clone https://github.com/isislab/CTFd.git
 </code></pre>
 
 <h2 id="instalando-dependencias-do-ctfd">Instalando dependencias do CTFd</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/14.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/14.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_14.png" alt="" /></a></p>
 
 <p>Vamos listar os arquivos , em seguida vamos entrar no diretorio <strong>CTFd</strong> e instalar as dependencias.</p>
 
-<pre><code class="sh"> cd CTFd/
- sudo ./prepare.sh
+<pre><code>cd CTFd/
+sudo ./prepare.sh
 </code></pre>
 
 <h2 id="nosso-arquivo-de-configura%C3%A7%C3%A3o">Nosso arquivo de configuração</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/15.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/15.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_15.png" alt="" /></a></p>
 
-<p>O arquivo de configuração do <strong>CTFd</strong> fica em</p>
+<p>O arquivo de configuração do CTFd fica em</p>
 
-<pre><code class="sh"> CTFd/config.py
+<pre><code>CTFd/config.py
 </code></pre>
 
 <p>Por padrão nosso CTF funciona na porta <strong>4000</strong> , vamos modiicar para ele funcionar na porta <strong>8081</strong> é bem simples!</p>
 
 <p>Por padrão ele é</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/16.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/16.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_16.png" alt="" /></a></p>
 
 <p>Após modificarmos vai ficar da seguinte forma</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/17.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/17.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_17.png" alt="" /></a></p>
 
 <h2 id="iniciando-nosso-ctf">Iniciando nosso CTF</h2>
 
 <p>É bem simples , vamos apenas executar o arquivo <strong>server.py</strong>.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/18.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/18.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_18.png" alt="" /></a></p>
 
-<pre><code class="sh"> python serve.py
+<pre><code> python serve.py
 </code></pre>
 
 <h2 id="tudo-on">Tudo ON</h2>
 
 <p>Como já era de se esperar nosso CTF está online , mais paramos por aqui!</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/19.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/19.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/instalando-ctfd-c9/thumb_19.png" alt="" /></a></p>
 
 <p>No proximo POST vamos criar a nossa indentidade nesse CTF incrivel!</p>
 
 <h2 id="configura%C3%A7%C3%A3o-minima">Configuração minima</h2>
 
-<p>A configuração minima como criar Admin , usuario normal , configurar challeges , testar <strong>keys</strong> e o CTF podemos aprender no <a href="http://growbr.org/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd">Criando seu proprio CTF com CTFd</a></p>
+<p>A configuração minima como criar Admin , usuario normal , configurar challeges , testar keys e o CTF podemos aprender no Criando seu proprio CTF com CTFd</p>
 ]]></content>
         </entry>
             <entry>
@@ -134,7 +134,7 @@
             <link href="/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd"/>
             <updated>2016-05-21T00:00:00-03:00</updated>
             <id>/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd</id>
-            <content type="html"><![CDATA[<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/01-ctf.png" class="img-responsive" alt="Responsive image"></p>
+            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/01-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_01-ctf.png" alt="" /></a></p>
 
 <p>Essa VM que usei é um Debian8(Jessie) , não tem nada instalado e configurado! Apenas o sistema Debian rodando limpo em linha de comando , vamos instalar tudo e no final vamos ter uma plataforma para criar seus próprios Capture The Flag.</p>
 
@@ -144,162 +144,188 @@
 
 <p>Precisamos de privilégios para isso então precisamos logar como <strong>root</strong>.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/02-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/02-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_02-ctf.png" alt="" /></a></p>
 
-<p>Para isso vamos instalar o <strong>sudo</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/03-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Para isso vamos instalar o <strong>sudo</strong>.</p>
 
-<pre><code class="sh"># apt-get install sudo
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/03-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_03-ctf.png" alt="" /></a></p>
+
+<pre><code># apt-get install sudo
 </code></pre>
 
 <h2 id="configura%C3%A7%C3%A3o-sudo">Configuração sudo</h2>
 
-<p>Agora vamos adicionar um usuário ao grupo <strong>sudo</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/04-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Agora vamos adicionar um usuário ao grupo <strong>sudo</strong>.</p>
 
-<pre><code class="sh"> # adduser USUARIO sudo
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/04-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_04-ctf.png" alt="" /></a></p>
+
+<pre><code> # adduser USUARIO sudo
 </code></pre>
 
-<p>Depois vamos testar dando um simples comando <strong>ifconfig</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/05-ctf.png" class="img-responsive" alt="Responsive image">
-Veja que é necessário colocar sua senha de usuário , é possível que precise reiniciar a <strong>VM</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/06-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Depois vamos testar dando um simples comando <strong>ifconfig</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/05-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_05-ctf.png" alt="" /></a></p>
+
+<p>Veja que é necessário colocar sua senha de usuário , é possível que precise reiniciar a <strong>VM</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/06-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_06-ctf.png" alt="" /></a></p>
 
 <h2 id="atualizando-sistema">Atualizando sistema</h2>
 
-<p>Para deixar nosso sistema atualizado vamos dar um <strong>upgrade</strong> seguindo de um <strong>upgrade</strong> para deixar nosso sistema atualizado.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/07-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Para deixar nosso sistema atualizado vamos dar um <strong>update</strong> seguindo de um <strong>upgrade</strong> para deixar nosso sistema atualizado.</p>
 
-<pre><code class="sh"> sudo apt-get update -y
- sudo apt-get upgrade -y
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/07-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_07-ctf.png" alt="" /></a></p>
+
+<pre><code>sudo apt-get update -y
+sudo apt-get upgrade -y
 </code></pre>
 
 <h2 id="instalando-ssh">Instalando SSH</h2>
 
-<p>Agora vamos instalar o serviço de <strong>SSH</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/08-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Agora vamos instalar o serviço de <strong>SSH</strong>.</p>
 
-<pre><code class="sh"> sudo apt-get install openssh-server openssh-client
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/08-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_08-ctf.png" alt="" /></a></p>
+
+<pre><code> sudo apt-get install openssh-server openssh-client
 </code></pre>
 
 <h2 id="instalando-git">Instalando Git</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/09-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/09-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_09-ctf.png" alt="" /></a></p>
 
-<pre><code class="sh"> sudo apt-get install git
+<pre><code> sudo apt-get install git
 </code></pre>
 
 <h2 id="controlando-via-ssh">Controlando via SSH</h2>
 
-<p>Como é uma VM essa maquina poderia estar em qualquer lugar da sua casa ou até do mundo se for usar algum serviço de hospedagem para o seu servidor , para isso
-vamos ter acesso de nossa maqina via <strong>SSH</strong>.</p>
+<p>Como é uma VM essa maquina poderia estar em qualquer lugar da sua casa ou até do mundo se for usar algum serviço de hospedagem para o seu servidor , para isso vamos ter acesso de nossa maqina via <strong>SSH</strong>.</p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/10-ctf.png" class="img-responsive" alt="Responsive image">
-Veja que primeiro demos um <strong>start</strong> no serviço <strong>SSH</strong>.</p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/10-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_10-ctf.png" alt="" /></a></p>
 
-<pre><code class="sh"> sudo service ssh start
+<p>Veja que primeiro demos um <strong>start</strong> no serviço <strong>SSH</strong>.</p>
+
+<pre><code> sudo service ssh start
 </code></pre>
 
 <p>Em seguida vemos nosso IP da nossa interface <strong>eth0</strong>.</p>
 
-<pre><code class="sh"> sudo ifconfig eth0
+<pre><code> sudo ifconfig eth0
 </code></pre>
 
 <p>Caso queira ver de todas elas</p>
 
-<pre><code class="sh">sudo ifconfig
+<pre><code>sudo ifconfig
 </code></pre>
 
-<p>Agora em nossa maquina vamos logar no servidor
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/11-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Agora em nossa maquina vamos logar no servidor</p>
 
-<pre><code class="sh"> ssh usuario@192.168.0.111
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/11-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_11-ctf.png" alt="" /></a></p>
+
+<pre><code> ssh usuario@192.168.0.111
 </code></pre>
 
-<p>Nesse caso <strong>usuario</strong> é seu nome de usuário , já <strong>192.168.0.111</strong> no caso é o <strong>IP</strong> do seu <strong>Servidor</strong>.</p>
+<p>Nesse caso usuario é seu nome de <strong>usuário</strong> , já <strong>192.168.0.111</strong> no caso é o <strong>IP</strong> do seu <strong>Servidor</strong>.</p>
 
-<p>Em seguida é necessário colocar a <strong>senha</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/12-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Em seguida é necessário colocar a <strong>senha</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/12-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_12-ctf.png" alt="" /></a></p>
 
 <h2 id="baixando-projeto">Baixando projeto</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/13-ctf.png" class="img-responsive" alt="Responsive image">
-Assim que logamos no serviço <strong>SSH</strong> vamos dar um <strong>pwd</strong> para ver onde estamos (diretório).</p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/13-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_13-ctf.png" alt="" /></a></p>
 
-<pre><code class="sh"> pwd
+<p>Assim que logamos no serviço <strong>SSH</strong> vamos dar um <strong>pwd</strong> para ver onde estamos (diretório).</p>
+
+<pre><code> pwd
 </code></pre>
 
 <p>Em seguida vamos clonar o projeto <strong>CTFd</strong>.</p>
 
-<pre><code class="sh"> git clone https://github.com/isislab/CTFd.git
+<pre><code> git clone https://github.com/isislab/CTFd.git
 </code></pre>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/14-ctf.png" class="img-responsive" alt="Responsive image">
-Em seguida vamos listar o nosso diretório ver se o projeto está OK.</p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/14-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_14-ctf.png" alt="" /></a></p>
 
-<pre><code class="sh"> ls
+<p>Em seguida vamos listar o nosso diretório ver se o projeto está OK.</p>
+
+<pre><code> ls
 </code></pre>
 
 <h2 id="instalando-depend%C3%AAncias">Instalando dependências</h2>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/15-ctf.png" class="img-responsive" alt="Responsive image">
-Está tudo <strong>OK</strong> como o nosso projeto , agora precisamos entrar na pasta e instalar as dependências.</p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/15-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_15-ctf.png" alt="" /></a></p>
 
-<pre><code class="sh"> cd CTFd/
+<p>Está tudo <strong>OK</strong> como o nosso projeto , agora precisamos entrar na pasta e instalar as dependências.</p>
+
+<pre><code> cd CTFd/
  ls
 </code></pre>
 
-<p>Vamos começar a instalar as dependências , do projeto.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/16-ctf.png" class="img-responsive" alt="Responsive image">
-Veja que dentro da pasta do projeto '''CTFd''' tem um arquivo chamado <strong>prepare.sh</strong> ele é um script que vai instalar todas as dependências do nosso projeto , para executar é simples !</p>
+<p>Vamos começar a instalar as dependências , do projeto.</p>
 
-<pre><code class="sh"> sudo ./prepare.sh
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/16-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_16-ctf.png" alt="" /></a></p>
+
+<p>Veja que dentro da pasta do projeto '''CTFd''' tem um arquivo chamado <strong>prepare.sh</strong> ele é um script que vai instalar todas as dependências do nosso projeto , para executar é simples !</p>
+
+<pre><code> sudo ./prepare.sh
 </code></pre>
 
-<p>Esse arquivo <strong>prepare.sh</strong> é o arquivo responsável por instalar as dependências do projeto <strong>CTFd</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/17-ctf.png" class="img-responsive" alt="Responsive image">
-Em seguida faça</p>
+<p>Esse arquivo <strong>prepare.sh</strong> é o arquivo responsável por instalar as dependências do projeto <strong>CTFd</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/17-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_17-ctf.png" alt="" /></a></p>
+
+<p>Em seguida faça</p>
 
 <h2 id="iniciando-o-ctfd">Iniciando o CTFd</h2>
 
-<pre><code class="sh"> python server.py
+<pre><code> python server.py
 </code></pre>
 
-<p>Vai iniciar o serviço , por padrão ele funciona na <strong>porta 4000</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/18-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Vai iniciar o serviço , por padrão ele funciona na <strong>porta 4000</strong>.</p>
 
-<p>Agora nosso CTF já esta funcionando , agora precisamos fazer algumas configurações.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/19-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/18-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_18-ctf.png" alt="" /></a></p>
 
-<p>Já estamos na pagina principal do projeto , vamos realizar o <strong>login</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/20-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Agora nosso CTF já esta funcionando , agora precisamos fazer algumas configurações.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/19-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_19-ctf.png" alt="" /></a></p>
+
+<p>Já estamos na pagina principal do projeto , vamos realizar o <strong>login</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/20-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_20-ctf.png" alt="" /></a></p>
 
 <p>Espero que não tenha esquecido sua senha , vamos fazer login e adicionar nosso primeiro <strong>Challenges</strong>.</p>
 
-<p>Assim que logado você vai ser redirecionado para a pagina de <strong>Challenges</strong> , como acabamos de configurar nosso projeto ainda não tem nenhum , vamos configurar ?
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/21-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Assim que logado você vai ser redirecionado para a pagina de <strong>Challenges</strong> , como acabamos de configurar nosso projeto ainda não tem nenhum , vamos configurar ?</p>
 
-<p>Está em branco , vamos criar um simples <strong>Challenge</strong> para testarmos o projeto e ver se está tudo <strong>OK</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/22-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/21-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_21-ctf.png" alt="" /></a></p>
 
-<p>Está tudo OK , vamos cadastrar outro usuário para testar.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/23-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Está em branco , vamos criar um simples <strong>Challenge</strong> para testarmos o projeto e ver se está tudo <strong>OK</strong>.</p>
 
-<p>Vamos para a pagina para registrar novos usuários , em seguida vamos cadastrar um usuário para teste.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/24-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/22-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_22-ctf.png" alt="" /></a></p>
 
-<p>Ok , apos o usuário criado a pagina é redirecionada para a pagina
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/25-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Está tudo OK , vamos cadastrar outro usuário para testar.</p>
 
-<p>Agora vamos resolver a <strong>challenge</strong> que criamos com o nosso <strong>admin</strong>.
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/26-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/23-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_23-ctf.png" alt="" /></a></p>
 
-<p>Vamos testar uma <strong>key</strong> que não é verdadeira para testarmos , aparece uma mensagem em vermelho no rodapé..
-<img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/27-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Vamos para a pagina para registrar novos usuários , em seguida vamos cadastrar um usuário para teste.</p>
 
-<p>Agora vamos resolver a <strong>Key</strong> , o resultado vai ser semelhante ! A diferença é uma mensagem de sucess em verde , veja agora a aba de <strong>1 solves</strong>.</p>
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/24-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_24-ctf.png" alt="" /></a></p>
 
-<p><img src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/28-ctf.png" class="img-responsive" alt="Responsive image"></p>
+<p>Ok , apos o usuário criado a pagina é redirecionada para a pagina</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/25-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_25-ctf.png" alt="" /></a></p>
+
+<p>Agora vamos resolver a <strong>challenge</strong> que criamos com o nosso <strong>admin</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/26-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_26-ctf.png" alt="" /></a></p>
+
+<p>Vamos testar uma <strong>key</strong> que não é verdadeira para testarmos , aparece uma mensagem em vermelho no rodapé..</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/27-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_27-ctf.png" alt="" /></a></p>
+
+<p>Agora vamos resolver a <strong>Key</strong> , o resultado vai ser semelhante ! A diferença é uma mensagem de sucess em verde , veja agora a aba de 1 <strong>solves</strong>.</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/28-ctf.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_28-ctf.png" alt="" /></a></p>
 
 <p>Alem de tudo isso temos uma área para a configuração do <strong>CTF</strong>. Podemos configurar <strong>EMAIL</strong> , o inicio e o fim do <strong>CTF</strong></p>
 
@@ -309,13 +335,9 @@ Em seguida faça</p>
 
 <p>No site Oficial , lá é possível você saber mais sobre o projeto e ainda pode alugar um servidor para realizar seu CTF com uma galera que já se divertindo a um tempo já por apenas 5 Dolares.</p>
 
-<p>Link do projeto: <a href="https://ctfd.io">ctfd</a></p>
+<p>Link do projeto: <a href="https://ctfd.io/">CTFd</a></p>
 
-<p>Link do github: <a href="https://ctfd.io">CTFd</a></p>
-
-<h2 id="no-proximo-post">No proximo post</h2>
-
-<p>Vamos instalar o CTF em uma VM na nuvem e mostrar o caminho para fazer as suas configurações e modificações de forma gratuita.</p>
+<p>Link do github: <a href="https://github.com/isislab/CTFd/">CTFd Github</a></p>
 ]]></content>
         </entry>
             <entry>
@@ -431,8 +453,9 @@ https://soundcloud.com/carlavalenti</p></li>
 
 <h2 id="quer-treinar-%3F">Quer Treinar ?</h2>
 
-<p>O pessoal do <a href="http://www.insert.uece.br/">INSERT</a> criou uma plataforma online com desafios de CTFs para as equipes e demais interessados terem a oportunidade de se preparar e aprender segurança da informação de forma prática. Conheça o <a href="https://shellterlabs.com/pt-br/">Shellter Labs</a>!
-<img src="http://growbr.org/cdn/imagem-posts/shelter.png" alt="Shellter Labs" title="Shellter Labs!" /></p>
+<p>O pessoal do <a href="http://www.insert.uece.br/">INSERT</a> criou uma plataforma online com desafios de CTFs para as equipes e demais interessados terem a oportunidade de se preparar e aprender segurança da informação de forma prática. Conheça o <a href="https://shellterlabs.com/pt-br/">Shellter Labs</a>!</p>
+
+<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/shelter.png" data-lightbox="example-set" data-title="Shellter Labs. :D"><img class="example-image" src="http://growbr.org/cdn/imagem-posts/shelter.png" alt="" /></a></p>
 
 <h2 id="qual-%C3%A9-o-p%C3%BAblico-alvo%3F">Qual é o público alvo?</h2>
 
