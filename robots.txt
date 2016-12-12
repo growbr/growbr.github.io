@@ -1,5 +1,13 @@
+-----------[ GrowBr ]-----------
+#Bot chama "nois" para legalizar
+--------------------------------
+
+---
+permalink: none
+---
+
 User-agent: *
 Disallow: /blog/tags/
 Disallow: /blog/categories/
 
-Sitemap: /sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
