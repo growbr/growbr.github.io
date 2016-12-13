@@ -3,9 +3,43 @@
     <title><![CDATA[GrowBr]]></title>
     <link href="/blog/tags/CTF.xml" rel="self"/>
     <link href="/"/>
-    <updated>2016-12-11T23:12:40-02:00</updated>
+    <updated>2016-12-12T23:15:49-02:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Conheça o 3DSCTF]]></title>
+            <link href="/blog/2016/12/12/3DSCTF"/>
+            <updated>2016-12-12T00:00:00-02:00</updated>
+            <id>/blog/2016/12/12/3DSCTF</id>
+            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/3DSCTF/3dctf.jpg" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_01-ctf.png" alt="" /></a></p>
+
+<p>O <a href="http://318br.sh/">318BR</a>, <a href="https://www.desec.com.br/">DESEC</a>, e <a href="https://www.sucurihc.org/">Sucurihc</a> Capture The Flag (também conhecido como <a href="https://www.facebook.com/3dsctf">Facebook 3DSCTF</a>) é uma competição cujo objetivo é testar as habilidades de hackers dos participantes em segurança de computadores e googling. Os desafios abrangem várias categorias (por exemplo, pwn, web, cripto) e, quando resolvidos, cada um produz uma string (a.k.a flag) que deve ser submetida a uma plataforma para marcar pontos. Em geral, CTFs são uma ótima maneira de aprender e expandir suas habilidades de segurança de computador em um ambiente seguro e legal hospedado e jogado por muitos grupos ao redor do mundo para se divertir.</p>
+
+<p>Podemos recordar o post em que eu apresentei essa otima ferramenta que é o <a href="http://growbr.org/blog/2016/05/21/criando-seu-proprio-ctf-com-ctfd/">CTFd</a> para criar os seus próprios Capture The Flag.</p>
+
+<p>Ou <a href="http://growbr.org/blog/2016/05/21/instalando-e-configurando-ctfd-no-c9/">veja aqui o post em que criamos no nosso proprio Capture The Flag</a> em uma plataforma gratuita para modificar e testar chamada C9.</p>
+
+<p>Tem diversos projetos para você estudar e começar a participar desses jogos , veja a criativa rede social voltada para participantes de CTF e que te guia para esse incrível caminho chamada <a href="https://shellterlabs.com/pt-br/">Shellterlabs</a>.</p>
+
+<h2 id="quando-vai-come%C3%A7ar-os-registros-%3F">Quando vai começar os registros ?</h2>
+
+<p>Já começou e pode entrar aqui em <a href="http://www.3dsctf.org/register/">Regitro 3DSCTF</a>.</p>
+
+<h2 id="quando-vai-acontecer-%3F">Quando vai acontecer ?</h2>
+
+<p>Do dia 17 ao 24 de Dezembro chame seus amigos , forme grupos e participe.</p>
+
+<h2 id="premia%C3%A7%C3%A3o">Premiação</h2>
+
+<p>A premiação é no valor de R$ 1.000,00 (Mil reais) que será entregue para o capitão do grupo.</p>
+
+<h2 id="regras">Regras</h2>
+
+<p>Veja as regras em <a href="http://www.3dsctf.org/rules.html">3DSCTF Regras</a>.</p>
+
+<p>Participe você também do <a href="&lt;http://www.3dsctf.org/">3DSCTF</a>.</p>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[Instalando e configurando o CTFd no C9]]></title>
             <link href="/blog/2016/05/21/instalando-e-configurando-ctfd-no-c9"/>
