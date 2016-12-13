@@ -3,7 +3,7 @@
     <title><![CDATA[GrowBr]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2016-12-12T23:15:48-02:00</updated>
+    <updated>2016-12-12T23:49:24-02:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -11,7 +11,7 @@
             <link href="/blog/2016/12/12/RootDay-WebConference"/>
             <updated>2016-12-12T00:00:00-02:00</updated>
             <id>/blog/2016/12/12/RootDay-WebConference</id>
-            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/RootDay-WebConference/rootday-a-melhor.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_01-ctf.png" alt="" /></a></p>
+            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/RootDay-WebConference/rootday-a-melhor.png" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/RootDay-WebConference/thumb-rootday-a-melhor.png" alt="" /></a></p>
 
 <p>A <a href="http://rootday.com.br/">RootDay WebConference</a> é um evento online com uma proposta inovadora: interação entre palestrantes , participantes e ajudar ao próximo.</p>
 
@@ -41,7 +41,7 @@
             <link href="/blog/2016/12/12/3DSCTF"/>
             <updated>2016-12-12T00:00:00-02:00</updated>
             <id>/blog/2016/12/12/3DSCTF</id>
-            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/3DSCTF/3dctf.jpg" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/Criando-CTF-com-CTFd/thumb_01-ctf.png" alt="" /></a></p>
+            <content type="html"><![CDATA[<p><a class="example-image-link" href="http://growbr.org/cdn/imagem-posts/3DSCTF/3dctf.jpg" data-lightbox="example-set" data-title="GreenMind não está disponível para escrever algo aqui."><img class="example-image" src="http://growbr.org/cdn/imagem-posts/3DSCTF/thumb-3dctf.jpg" alt="" /></a></p>
 
 <p>O <a href="http://318br.sh/">318BR</a>, <a href="https://www.desec.com.br/">DESEC</a>, e <a href="https://www.sucurihc.org/">Sucurihc</a> Capture The Flag (também conhecido como <a href="https://www.facebook.com/3dsctf">Facebook 3DSCTF</a>) é uma competição cujo objetivo é testar as habilidades de hackers dos participantes em segurança de computadores e googling. Os desafios abrangem várias categorias (por exemplo, pwn, web, cripto) e, quando resolvidos, cada um produz uma string (a.k.a flag) que deve ser submetida a uma plataforma para marcar pontos. Em geral, CTFs são uma ótima maneira de aprender e expandir suas habilidades de segurança de computador em um ambiente seguro e legal hospedado e jogado por muitos grupos ao redor do mundo para se divertir.</p>
 
